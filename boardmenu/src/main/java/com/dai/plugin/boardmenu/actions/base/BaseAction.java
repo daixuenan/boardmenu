@@ -1,4 +1,4 @@
-package com.dai.plugin.boardmenu.actions;
+package com.dai.plugin.boardmenu.actions.base;
 
 import android.content.Context;
 
@@ -12,7 +12,7 @@ public abstract class BaseAction<T> implements Serializable {
     protected String iconUrl;
 
     //title
-    protected String title;
+    protected String label;
 
     //content
     protected String content;
@@ -44,14 +44,6 @@ public abstract class BaseAction<T> implements Serializable {
         this.iconUrl = iconUrl;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public String getContent() {
         return content;
     }
@@ -75,4 +67,13 @@ public abstract class BaseAction<T> implements Serializable {
     public void setData(T data) {
         this.data = data;
     }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
 }
