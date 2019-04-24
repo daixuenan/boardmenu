@@ -25,12 +25,16 @@
 modle 的Gradle添加
 
 ```markdown
-implementation 'com.github.daixuenan:BaseDialog:v1.0.1'
+implementation 'com.github.daixuenan:boardmenu:v1.0.0'
 ```
 
 #### 使用说明
 
-1. xxxx
+1. 定义MenuPopView
+
+```markdown
+private MenuPopView menuPopView;
+```
 2. xxxx
 3. xxxx
 

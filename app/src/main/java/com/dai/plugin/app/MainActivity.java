@@ -30,29 +30,15 @@ public class MainActivity extends AppCompatActivity {
         menuPopView = new MenuPopView(this);
 
         List<BaseAction> dataList = new ArrayList<>();
-        dataList.add(new Button1Action(this));
-        dataList.add(new Button1Action(this));
-        dataList.add(new Button1Action(this));
-        dataList.add(new Button1Action(this));
-        dataList.add(new Button1Action(this));
-        dataList.add(new Button1Action(this));
-        dataList.add(new Button1Action(this));
-        dataList.add(new Button1Action(this));
-
-        dataList.add(new Button2Action(this));
-        dataList.add(new Button2Action(this));
-        dataList.add(new Button2Action(this));
-        dataList.add(new Button2Action(this));
-        dataList.add(new Button2Action(this));
-        dataList.add(new Button2Action(this));
-        dataList.add(new Button2Action(this));
-        dataList.add(new Button2Action(this));
-
-        dataList.add(new Button3Action(this));
-        dataList.add(new Button3Action(this));
-        dataList.add(new Button3Action(this));
-        dataList.add(new Button3Action(this));
-        dataList.add(new Button3Action(this));
+        for (int i = 0; i < 8; i++) {
+            dataList.add(new Button1Action(this));
+        }
+        for (int i = 0; i < 8; i++) {
+            dataList.add(new Button2Action(this));
+        }
+        for (int i = 0; i < 5; i++) {
+            dataList.add(new Button3Action(this));
+        }
 
         menuPopView.setData(dataList);
 
